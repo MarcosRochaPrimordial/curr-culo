@@ -1,12 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     width: 794px;
     height: 1123px;
     font-family: 'Raleway', sans-serif;
+    padding: 0 16px 0 16px;
 }
 
 .divisor {
     width: 70%;
     height: 2px;
+    background-color: #CDCDCD;
+    border: none;
+}
+
+.minor-divisor {
+    width: 50%;
+    height: 1px;
     background-color: #CDCDCD;
     border: none;
 }
@@ -62,6 +75,14 @@ footer {
     text-align: right;
 }
 
+.icon {
+    width: 15px;
+    height: 15px;
+    color: rgb(94, 146, 130);
+    text-align: center;
+    font-weight: bolder;
+}
+
 .contacts p {
     font-size: 12px;
 }
@@ -78,6 +99,7 @@ footer {
 .session-item h5 {
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .session-item h6 {
@@ -89,6 +111,11 @@ footer {
 
 .session-item p {
     margin: 0px;
+    font-size: 13px;
+}
+
+.session-item ul li {
+    font-size: 12px;
 }
 
 .speech #speech {
@@ -153,4 +180,74 @@ footer {
 
 ul {
     list-style-type: none;
+    padding-left: 20px;
 }
+
+.timeline-content {
+    position: relative;
+    width: 90%;
+    padding: 1px 15px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item {
+    width: 94%;
+    margin-bottom: 5px;
+}
+
+.work-xp .session::before {
+    margin-top: 5px;
+    content: '';
+    background: #87D1BA;
+    width: 5px;
+    height: 55%;
+    position: absolute;
+    right: 1%;
+    transform: translateX(-50%);
+}
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 22px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+    width: 15px;
+    height: 15px;
+    background: rgb(108, 167, 148);
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    position: absolute;
+    right: 0%;
+    margin-top: 25px;
+    margin-left: -15px;
+}
+
+.calendar {
+    font-size: 11px;
+    color: rgb(108, 167, 148);
+}
+
+.seta-cima:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #87D1BA;
+    right: -2.3%;
+    position: absolute;
+  }
