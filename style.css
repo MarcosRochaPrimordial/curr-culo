@@ -275,7 +275,6 @@ ul {
 
 .personal-project {
     padding-bottom: 1px;
-    /* box-shadow: 0 19px 9px -21px rgba(0, 0, 0, 0.3); */
     border-radius: 10px;
 }
 
@@ -294,4 +293,8 @@ ul {
 .personal-project .link {
     color: rgb(73, 168, 138);
     text-decoration: underline #87D1BA;
+}
+
+.page-divider {
+    margin-top: 32px;
 }
