@@ -223,10 +223,17 @@ ul {
     content: '';
     background: #87D1BA;
     width: 5px;
-    height: 55%;
     position: absolute;
     right: 1%;
     transform: translateX(-50%);
+}
+
+.session-1::before {
+    height: 41%;
+}
+
+.session-2::before {
+    height: 62%;
 }
 
 .timeline-content::after {
@@ -296,5 +303,5 @@ ul {
 }
 
 .page-divider {
-    margin-top: 32px;
+    margin-top: 35px;
 }
